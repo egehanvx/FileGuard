@@ -1,63 +1,51 @@
 # FileGuard
 
-FileGuard, Android cihazlar üzerinde dosyaların statik güvenlik analizini gerçekleştirmek için geliştirilen bir Android uygulamasıdır.
+<p align="center">
 
-Uygulama seçilen dosyayı cihaz üzerinde analiz ederek dosya türü, MIME type, SHA-256 hash ve çeşitli yapısal güvenlik göstergelerini incelemeyi amaçlar.
+**Android üzerinde çalışan statik dosya güvenlik ve risk analiz aracı**
 
-## Özellikler
+Dosyaları çalıştırmadan analiz eder, dosya yapısını inceler, APK'ları statik olarak analiz eder ve elde edilen bulgular üzerinden bir risk değerlendirmesi oluşturur.
 
-- Android sistem dosya seçicisi
-- Dosya adı ve boyut analizi
-- MIME type analizi
-- Dosya uzantısı kontrolü
-- Magic byte / dosya header kontrolü
-- SHA-256 hash hesaplama
-- APK yapısal analizi
-- AndroidManifest analizi
-- Permission analizi
-- Activity, Service, Receiver ve Provider analizi
-- Exported component tespiti
-- DEX string/pattern analizi
-- Native library tespiti
-- Heuristic risk değerlendirmesi
-- 0-100 arası risk skoru
-- Güvenli / Düşük Risk / Şüpheli / Yüksek Risk sınıflandırması
-- Cihaz üzerinde statik analiz
+</p>
 
-## Teknolojiler
+<p align="center">
 
-- Kotlin
-- Android Studio
-- Jetpack Compose
-- Material 3
-- Kotlin Coroutines
-- Android Storage Access Framework
+![Platform](https://img.shields.io/badge/Platform-Android-brightgreen)
+![Language](https://img.shields.io/badge/Language-Kotlin-purple)
+![UI](https://img.shields.io/badge/UI-Jetpack%20Compose-blue)
+![Material](https://img.shields.io/badge/Material-3-757575)
+![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 
-## Analiz Mantığı
+</p>
 
-FileGuard bir dosyayı çalıştırmaz.
+---
 
-Analiz işlemi statik olarak gerçekleştirilir:
+## 📸 Uygulama Görüntüleri
 
-```text
-Dosya
-  ↓
-Metadata
-  ↓
-SHA-256
-  ↓
-Dosya türü
-  ↓
-Dosya yapısı
-  ↓
-APK ise Manifest
-  ↓
-Permissions
-  ↓
-Components
-  ↓
-DEX
-  ↓
-Native Libraries
-  ↓
-Risk değerlendirmesi
+### Ana Ekran
+
+<p align="center">
+  <img src="screenshots/home.png" width="280">
+</p>
+
+### Dosya Analizi
+
+<p align="center">
+  <img src="screenshots/file-analysis.png" width="280">
+</p>
+
+### APK Statik Analizi
+
+<p align="center">
+  <img src="screenshots/apk-analysis.png" width="280">
+</p>
+
+### Risk Değerlendirmesi
+
+<p align="center">
+  <img src="screenshots/risk-result.png" width="280">
+</p>
+
+---
+
+## 📱 Proje Hakkında
